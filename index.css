@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  background-color: #121212;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+}
+.banner h1 {
+  color: white;
+  font-family: "Fira Code", monospace;
+}
+.navigasi {
+  background-color: gold;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  color: #121212;
+  font-size: 1.5em;
+  font-family: "Righteous", cursive;
+  margin-left: 10px;
+}
+.nav-container {
+  margin: 0 20px;
+}
+.nav-container a {
+  color: #121212;
+  font-weight: bold;
+  font-family: "Fira Code", monospace;
+  margin: 0 10px;
+}
+main {
+  margin: 0 20%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  font-family: "Fira Code", monospace;
+}
+.intro img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+.intro h2,
+h3 {
+  margin: 10px 0;
+}
+#about {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+h2,
+h3,
+h4 {
+  font-family: "Fira Code", monospace;
+}
+#about p {
+  text-align: justify;
+}
+#about p,
+h2 {
+  margin: 10px 0 0 0;
+}
+p {
+  text-align: justify;
+}
+#pendidikan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pendidikan h2,
+.pendidikan-con {
+  margin: 10px 0;
+}
+.pendidikan-con {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  grid-template-rows: auto auto auto auto;
+}
+.col-con {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+#kontak {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Code", monospace;
+  flex-wrap: wrap;
+}
+#kontak h2,
+div {
+  margin: 10px 0;
+}
+.sosmed {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin: 50px 0;
+}
+.sosmed div {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kontak p {
+  text-align: justify;
+}
+#kontak form {
+  display: flex;
+  flex-direction: column;
+}
+#kontak input {
+  height: 30px;
+  border: 2px solid #121212;
+  border-radius: 8px;
+}
+form label,
+textarea,
+input,
+button {
+  margin: 6px 0;
+}
+form textarea {
+  height: 100px;
+  border: 2px solid #121212;
+  border-radius: 8px;
+}
+form button {
+  height: 30px;
+  width: 60px;
+  background-color: #121212;
+  color: white;
+  border: 2px solid #121212;
+  border-radius: 8px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+  background-color: #121212;
+}
+footer p {
+  font-weight: bold;
+  color: gold;
+}
+/* handphone mode */
+@media only screen and (min-width: 320px) and (max-width: 1080px) {
+  .banner {
+    font-size: 70%;
+  }
+  .navigasi {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90px;
+  }
+  .logo {
+    display: none;
+  }
+
+  .nav-container a {
+    font-size: 75%;
+  }
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
